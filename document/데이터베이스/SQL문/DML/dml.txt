@@ -1,0 +1,410 @@
+/* genre_tb */
+Insert Into genre_tb values(0,'기타');
+Insert Into genre_tb values(1,'발라드');
+Insert Into genre_tb values(2,'댄스');
+Insert Into genre_tb values(3,'랩/힙합');
+Insert Into genre_tb values(4,'RnbB/Soul');
+Insert Into genre_tb values(5,'록/메탈');
+Insert Into genre_tb values(6,'EDM');
+Insert Into genre_tb values(7,'클래식');
+Insert Into genre_tb values(8,'BGM');
+Insert Into genre_tb values(9,'POP');
+
+/* member_class_tb */
+insert into member_class_tb (member_class_id,member_class_name,maximum_storage_size) values (0,'관리자',0);
+insert into member_class_tb (member_class_id,member_class_name,maximum_storage_size) values (1,'회원',3);
+
+/* member_tb */
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('qhdl0224','dydghk123','우욤패트릭','우용화','010-5686-1143',1,'qhdl0224@naver.com');
+insert into member_tb (member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('leejingoo','jingoozzang','진구찡','이진구','010-1234-5678',1,'jingoo@naver.com');
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('jeondong','donggoo456','동구','전동구','010-4267-4571',1,'donggoo@naver.com');
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('donghoon','@hooni333','후니','전동훈','010-4561-9875',1,'hooni@google.com');
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('joonsung14','mrjoon4451','준이','김준성','010-9867-4451',1,'joonsung@naver.com');
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('jiwookkkk','jiwoo1234','지우','김지우','010-4512-9864',1,'jiwoo@hanmail.net');
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('joodang','superhjj33','주댕','주형진','010-1347-9435',1,'superhjj@naver.com');
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('oaksungmin','oak94353','오크','오성민','010-4167-9435',1,'rkdaos19@naver.com');
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('soheesleep','sleeplove123','잠만보','소희','010-3467-2221',1,'sleeplove@google.com');
+insert into member_tb(member_id,member_password,member_nickname,member_name,member_phone,member_class_id,member_email) values('fisher007','djqnwhsaht1','어부','어혜민','010-8715-6968',1,'Imfisher1@naver.com');
+
+/* image_tb */
+insert into image_tb(image_id,image_path) values(1,'\image\profile\1');
+insert into image_tb(image_id,image_path) values(2,'\image\profile\2');
+insert into image_tb(image_id,image_path) values(3,'\image\profile\3');
+insert into image_tb(image_id,image_path) values(4,'\image\profile\4');
+insert into image_tb(image_id,image_path) values(5,'\image\profile\5');
+insert into image_tb(image_id,image_path) values(6,'\image\profile\6');
+insert into image_tb(image_id,image_path) values(7,'\image\profile\7');
+insert into image_tb(image_id,image_path) values(8,'\image\profile\8');
+insert into image_tb(image_id,image_path) values(9,'\image\profile\9');
+insert into image_tb(image_id,image_path) values(10,'\image\profile\10');
+insert into image_tb(image_id,image_path) values(11,'\image\playlist\1.png');
+insert into image_tb(image_id,image_path) values(12,'\image\playlist\2.png');
+insert into image_tb(image_id,image_path) values(13,'\image\playlist\3.png');
+insert into image_tb(image_id,image_path) values(14,'\image\playlist\4.png');
+insert into image_tb(image_id,image_path) values(15,'\image\playlist\5.png');
+insert into image_tb(image_id,image_path) values(16,'\image\playlist\6.png');
+insert into image_tb(image_id,image_path) values(17,'\image\playlist\7.png');
+insert into image_tb(image_id,image_path) values(18,'\image\playlist\8.png');
+insert into image_tb(image_id,image_path) values(19,'\image\playlist\9.png');
+insert into image_tb(image_id,image_path) values(20,'\image\playlist\10.png');
+insert into image_tb(image_id,image_path) values(21,'\image\playlist\11.png');
+insert into image_tb(image_id,image_path) values(22,'\image\playlist\12.png');
+insert into image_tb(image_id,image_path) values(23,'\image\playlist\13.png');
+insert into image_tb(image_id,image_path) values(24,'\image\playlist\14.png');
+insert into image_tb(image_id,image_path) values(25,'\image\playlist\15.png');
+insert into image_tb(image_id,image_path) values(26,'\image\playlist\16.png');
+insert into image_tb(image_id,image_path) values(27,'\image\playlist\17.png');
+insert into image_tb(image_id,image_path) values(28,'\image\playlist\18.png');
+insert into image_tb(image_id,image_path) values(29,'\image\playlist\19.png');
+insert into image_tb(image_id,image_path) values(30,'\image\playlist\20.png');
+
+/* local_file_tb */
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (1, '\storage\qhdl0224\1');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (2, '\storage\jiwookkkk\1');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (3, '\storage\leejingoo\1');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (4, '\storage\qhdl0224\2');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (5, '\storage\fisher007\1');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (6, '\storage\joonsung14\1');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (7, '\storage\jeondong\1');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (8, '\storage\donghoon\1');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (9, '\storage\joodang\1');
+INSERT INTO local_file_tb (local_file_id, local_file_path)
+VALUES (10, '\storage\qhdl0224\3');
+
+/* folder_tb */
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (0, 'root', 0, 'qhdl0224');
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (1, 'my_folder', 0, 'qhdl0224');
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (2, 'jiwoo', 0, 'jiwookkkk');
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (3, 'jingoo', 0, 'leejingoo');
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (4, 'fish', 0, 'fisher007');
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (5, 'joon', 0, 'joonsung14');
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (6, 'donggoo', 0, 'jeondong');
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (7, 'donghoon', 0, 'donghoon');
+INSERT INTO folder_tb (folder_id, folder_name, super_folder_id, member_id) 
+VALUES (8, 'joo', 0, 'joodang');
+
+/* file_tb */
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (1, 'intro.mp3', 'mp3', to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'), 300, 1, 'qhdl0224', 1);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (2, 'ABC Song.ogg', 'ogg', to_date('2018-07-1212:14:11','yyyy-mm-ddhh24:mi:ss'), 300, 1, 'jiwookkkk', 2);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (3, 'I can Sing a rainbow.ogg', 'ogg', to_date('2018-07-1108:20:23','yyyy-mm-ddhh24:mi:ss'), 4000, 0, 'leejingoo', 3);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (4, 'The Abc Song.ogg', 'ogg', to_date('2018-07-0912:07:54','yyyy-mm-ddhh24:mi:ss'), 3560, 0, 'qhdl0224', 4);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (5, 'Happy birthday.wav', 'wav', to_date('2018-07-0518:04:55','yyyy-mm-ddhh24:mi:ss'), 2733, 1, 'fisher007', 5);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (6, 'Hello Song.wav', 'wav', to_date('2018-06-0501:23:47','yyyy-mm-ddhh24:mi:ss'), 1652, 0, 'joonsung14', 6);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (7, 'German Cradle Song.wav', 'wav', to_date('2018-07-1114:20:23','yyyy-mm-ddhh24:mi:ss'), 1321, 0, 'jeondong', 7);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (8, 'The Alpabet Song.mp3', 'mp3', to_date('2018-07-0713:11:23','yyyy-mm-ddhh24:mi:ss'), 947, 1, 'donghoon', 8);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (9, 'Who Let The Dogs Out.mp3', 'mp3', to_date('2018-07-1016:40:11','yyyy-mm-ddhh24:mi:ss'), 364, 0, 'joodang', 9);
+INSERT INTO file_tb (file_id, file_name, file_extension, file_upload_date, file_size, folder_id, member_id, local_file_id)
+VALUES (10, 'Baby Bird.mp3', 'mp3', to_date('2018-07-1220:33:12','yyyy-mm-ddhh24:mi:ss'), 335, 1, 'qhdl0224', 10);
+
+/* media_file_tb */
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (1, 180);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (2, 191);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (3, 242);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (4, 179);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (5, 126);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (6, 136);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (7, 193);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (8, 201);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (9, 114);
+INSERT INTO media_file_tb (file_id, file_play_time)
+VALUES (10, 185);
+
+/* important_file_tb */
+insert into important_file_tb(file_id,file_important) values(1,'1');
+insert into important_file_tb(file_id,file_important) values(2,'0');
+insert into important_file_tb(file_id,file_important) values(3,'1');
+insert into important_file_tb(file_id,file_important) values(4,'0');
+insert into important_file_tb(file_id,file_important) values(5,'1');
+insert into important_file_tb(file_id,file_important) values(6,'1');
+insert into important_file_tb(file_id,file_important) values(7,'0');
+insert into important_file_tb(file_id,file_important) values(8,'0');
+insert into important_file_tb(file_id,file_important) values(9,'0');
+insert into important_file_tb(file_id,file_important) values(10,'0');
+
+/* follow_tb */
+insert into follow_tb (follow_member_id, follower_member_id) values ('donghoon','jiwookkkk');
+insert into follow_tb (follow_member_id, follower_member_id) values ('donghoon','joodang');
+insert into follow_tb (follow_member_id, follower_member_id) values ('donghoon','joonsung14');
+insert into follow_tb (follow_member_id, follower_member_id) values ('donghoon','soheesleep');
+insert into follow_tb (follow_member_id, follower_member_id) values ('soheesleep','donghoon');
+insert into follow_tb (follow_member_id, follower_member_id) values ('leejingoo','oaksungmin');
+insert into follow_tb (follow_member_id, follower_member_id) values ('leejingoo','qhdl0224');
+insert into follow_tb (follow_member_id, follower_member_id) values ('oaksungmin','leejingoo');
+insert into follow_tb (follow_member_id, follower_member_id) values ('qhdl0224','leejingoo');
+insert into follow_tb (follow_member_id, follower_member_id) values ('fisher007','qhdl0224');
+insert into follow_tb (follow_member_id, follower_member_id) values ('qhdl0224','fisher007');
+insert into follow_tb (follow_member_id, follower_member_id) values ('joodang','fisher007');
+insert into follow_tb (follow_member_id, follower_member_id) values ('fisher007','jiwookkkk');
+insert into follow_tb (follow_member_id, follower_member_id) values ('fisher007','joonsung14');
+insert into follow_tb (follow_member_id, follower_member_id) values ('oaksungmin','jeondong');
+insert into follow_tb (follow_member_id, follower_member_id) values ('jiwookkkk','oaksungmin');
+insert into follow_tb (follow_member_id, follower_member_id) values ('jeondong','oaksungmin');
+
+/* member_profile_tb */
+insert into member_profile_tb(member_id,image_id,member_intro) values('qhdl0224',1,'안녕하세요');
+insert into member_profile_tb(member_id,image_id,member_intro) values('leejingoo',2,'안녕하세요 진구에요');
+insert into member_profile_tb(member_id,image_id,member_intro) values('jeondong',3,'전동구다!!!');
+insert into member_profile_tb(member_id,image_id,member_intro) values('donghoon',4,'ㅎㅇ');
+insert into member_profile_tb(member_id,image_id,member_intro) values('joonsung14',5,'노래 듣고시퍼요');
+insert into member_profile_tb(member_id,image_id,member_intro) values('jiwookkkk',6,'지우찡이에요');
+insert into member_profile_tb(member_id,image_id,member_intro) values('joodang',7,'노래 들으려 왔슴다');
+insert into member_profile_tb(member_id,image_id,member_intro) values('oaksungmin',8,'반갑습니다.');
+insert into member_profile_tb(member_id,image_id,member_intro) values('soheesleep',9,'노래들으면서 자고싶어요');
+insert into member_profile_tb(member_id,image_id,member_intro) values('fisher007',10,'아마추어 분들의 노래를 듣고싶어요');
+
+/* music_tb */
+INSERT INTO music_tb VALUES(1,'intro','인트로',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'qhdl0224',1,0,1);
+INSERT INTO music_tb VALUES(2,'ABC','에이비씨',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'qhdl0224',2,0,2);
+INSERT INTO music_tb VALUES(3,'I can Sing a rainbow','나는 무지개를 노래할 수 있습니다',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'jiwookkkk',3,2,3);
+INSERT INTO music_tb VALUES(4,'The Abc','더 에이비씨',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'leejingoo',4,3,4);
+INSERT INTO music_tb VALUES(5,'Hppay birth day','해피 버스 데이',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'qhdl0224',5,4,5);
+INSERT INTO music_tb VALUES(6,'Hello Song','안녕 노래',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'fisher007',6,5,6);
+INSERT INTO music_tb VALUES(7,'German Cradle Song','독일 무슨 노래',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'joonsung14',7,2,7);
+INSERT INTO music_tb VALUES(8,'The Alphabet Song','알파벳 송',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'jeondong',8,3,8);
+INSERT INTO music_tb VALUES(9,'Whe Let The Dogs Out','누가 개짖는 소리를 내었는가',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'donghoon',9,4,9);
+INSERT INTO music_tb VALUES(10,'Baby Bird','아기 새',to_date('2018-07-0812:14:11','yyyy-mm-ddhh24:mi:ss'),'joodang',10,5,10);
+
+/* music_config_tb */
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(1,0,0);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(2,1,1);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(3,1,0);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(4,1,0);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(5,0,0);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(6,1,1);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(7,1,0);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(8,1,1);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(9,0,0);
+INSERT INTO music_config_tb(music_id,music_visibility,music_download_accept) VALUES(10,0,0);
+
+/* music_count_tb */
+INSERT INTO music_count_tb VALUES(1,10);
+INSERT INTO music_count_tb VALUES(2,20);
+INSERT INTO music_count_tb VALUES(3,30);
+INSERT INTO music_count_tb VALUES(4,40);
+INSERT INTO music_count_tb VALUES(5,50);
+INSERT INTO music_count_tb VALUES(6,60);
+INSERT INTO music_count_tb VALUES(7,0);
+INSERT INTO music_count_tb VALUES(8,10);
+INSERT INTO music_count_tb VALUES(9,20);
+INSERT INTO music_count_tb VALUES(10,30);
+
+/* tag_music_tb */
+insert into tag_music_tb(tag_name,music_id) values('내가 좋아하는 곡',1);
+insert into tag_music_tb(tag_name,music_id) values('짱짱 노래',2);
+insert into tag_music_tb(tag_name,music_id) values('내 띵곡',3);
+insert into tag_music_tb(tag_name,music_id) values('띵곡',4);
+insert into tag_music_tb(tag_name,music_id) values('명곡',5);
+insert into tag_music_tb(tag_name,music_id) values('내 18번',6);
+insert into tag_music_tb(tag_name,music_id) values('불후의 명곡',7);
+insert into tag_music_tb(tag_name,music_id) values('오크 18번 곡',8);
+insert into tag_music_tb(tag_name,music_id) values('주댕곡',9);
+insert into tag_music_tb(tag_name,music_id) values('좋아요',10);
+
+/* like_music_tb */
+insert into like_music_tb (music_id,member_id) values (1,'jiwookkkk');
+insert into like_music_tb (music_id,member_id) values (1,'soheesleep');
+insert into like_music_tb (music_id,member_id) values (1,'oaksungmin');
+insert into like_music_tb (music_id,member_id) values (2,'jiwookkkk');
+insert into like_music_tb (music_id,member_id) values (3,'jiwookkkk');
+insert into like_music_tb (music_id,member_id) values (5,'soheesleep');
+insert into like_music_tb (music_id,member_id) values (1,'qhdl0224');
+insert into like_music_tb (music_id,member_id) values (2,'soheesleep');
+insert into like_music_tb (music_id,member_id) values (8,'donghoon');
+insert into like_music_tb (music_id,member_id) values (10,'donghoon');
+
+/* playlist_tb */
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (1,'인생 힘들때 듣는 노래',11,'qhdl0224','인생이 힘들 때 들어보세요',TO_DATE('2018-07-1122:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (2,'배고플때 듣는 노래',12,'qhdl0224','배고플때 들어보세요',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss
+'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (3,'배고플때 듣지마!!',13,'qhdl0224','배고플때 들으면 더 배고픈 노래',TO_DATE('2018-07-1322:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (4,'힙합 모음',14,'leejingoo','힙합 모음',TO_DATE('2018-07-1422:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (5,'락 모음',15,'leejingoo','락 모음',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (6,'락의 소울에 모두 전염되라',16,'leejingoo','락 모음',TO_DATE('2018-07-1522:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (7,'간 지 오 지 지',11,'jeondong','OGG',TO_DATE('2018-07-1622:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title,image_id, member_id,  playlist_intro, playlist_date) values (8,'동훈이의 간지목차',11,'jeondong','배고플때 들어보세요',TO_DATE('2018-07-1722:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (9,'뿌잉뿌잉 귀여움을 유발하는 음악',17,'jeondong','배고플때 들어보세요ㅋ',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (10,'고양이들이 좋아하는 노래',11,'donghoon','야옹야옹',TO_DATE('2018-07-1822:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (11,'세상의 모든 뉴에이지',18,'donghoon','뉴에이지',TO_DATE('2018-07-1922:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (12,'동훈이는 자면서 무슨 음악을 들을까?',19,'donghoon','배고프당',TO_DATE('2018-07-2022:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (13,'준성이의 허세 목차',11,'joonsung14','인생은 허세이다',TO_DATE('2018-07-1221:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (14,'학과장의 바쁜 하루',20,'joonsung14','바쁘다 바빠',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (15,'천방지축 준성이의 바쁜 트랙리스트',21,'joonsung14','배고플때 들어보세요',TO_DATE('2018-07-1222:02:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title,image_id, member_id, playlist_intro, playlist_date) values (16,'지우 공주의 우아한 클래식 감상',11,'jiwookkkk','공주님',TO_DATE('2018-07-1222:03:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (17,'지우 공주의 화려한 락 감상',22,'jiwookkkk','공주님',TO_DATE('2018-07-1222:04:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (18,'지우 공주의 10pick!',23,'jiwookkkk','공주님',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (19,'주형진의 싸이 BGM 추천',25,'joodang','BGM은 역시',TO_DATE('2018-07-1222:05:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title,image_id, member_id,  playlist_intro, playlist_date) values (20,'형진이의 트랙리스트',24,'joodang','배고플때 들어보세요',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (21,'배고플때 듣는 노래',26,'joodang','배고플때 들어보세요',TO_DATE('2018-07-1222:06:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (22,'오성민의 첼로 감상 맨',27,'oaksungmin','배고플때 들어보세요',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (23,'오성민의 클래식 감상 시간',28,'oaksungmin','배고플때 들어보세요',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (24,'오성민의 사랑 고백 노래들 추천',11,'oaksungmin','하이고',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (25,'남자의 첫사랑은 무덤까지 간다',29,'soheesleep','그렇다',TO_DATE('2018-07-1222:07:24','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (26,'구현하기 어려운 설계',30,'soheesleep','설계',TO_DATE('2018-07-1222:07:23','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (27,'코딩하며 듣는 노래',11,'soheesleep','코호딩',TO_DATE('2018-07-1222:07:22','yyyy.mm.ddhh24:mi:ss'));
+
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (28,'어혜민의 귀갓길 노래',11,'fisher007','배고플때 들어보세요',TO_DATE('2018-07-1222:07:23','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id,  playlist_intro, playlist_date) values (29,'어혜민의 밥 먹을때 듣는 트랙',11,'fisher007','배고플때 들어보세요',TO_DATE('2018-07-1222:07:28','yyyy.mm.ddhh24:mi:ss'));
+insert into playlist_tb (playlist_id, playlist_title, image_id, member_id, playlist_intro, playlist_date) values (30,'요즘 HOT한 음악 모음',11,'fisher007','히트다히트',TO_DATE('2018-07-1222:07:24','yyyy.mm.ddhh24:mi:ss'));
+
+/* playlist_config_tb */
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (1,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (2,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (3,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (4,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (5,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (6,0);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (7,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (8,0);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (9,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (10,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (11,0);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (12,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (13,0);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (14,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (15,0);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (16,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (17,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (18,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (19,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (20,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (21,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (22,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (23,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (24,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (25,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (26,0);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (27,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (28,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (29,1);
+insert into playlist_config_tb (playlist_id,playlist_visibility) values (30,1);
+
+/* playlist_path_tb */
+insert into playlist_path_tb (playlist_id,playlist_path) values(1,'/playlists/1.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(2,'/playlists/2.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(3,'/playlists/3.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(4,'/playlists/4.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(5,'/playlists/5.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(6,'/playlists/6.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(7,'/playlists/7.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(8,'/playlists/8.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(9,'/playlists/9.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(10,'/playlists/10.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(11,'/playlists/11.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(12,'/playlists/12.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(13,'/playlists/13.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(14,'/playlists/14.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(15,'/playlists/15.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(16,'/playlists/16.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(17,'/playlists/17.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(18,'/playlists/18.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(19,'/playlists/19.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(20,'/playlists/20.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(21,'/playlists/21.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(22,'/playlists/22.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(23,'/playlists/23.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(24,'/playlists/24.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(25,'/playlists/25.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(26,'/playlists/26.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(27,'/playlists/27.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(28,'/playlists/28.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(29,'/playlists/29.tsop');
+insert into playlist_path_tb (playlist_id,playlist_path) values(30,'/playlists/30.tsop');
+
+/* tag_playlilst_tb */
+insert into tag_playlist_tb (tag_name,playlist_id) values ('Rock',1);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('지우공주',1);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('LoveGanZi',2);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('SQLPLUS',2);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('OK',3);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('FUNNY',4);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('활기찬',5);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('신나는',6);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('어두운',7);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('배고픈',8);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('Rock',9);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('히히',10);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('하하',11);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('웃어보쟈',12);
+insert into tag_playlist_tb (tag_name,playlist_id) values ('웃어보자',13);
+
+/* playlist_repost_tb */
+insert into playlist_repost_tb (playlist_id,member_id) values (2,'qhdl0224');
+insert into playlist_repost_tb (playlist_id,member_id) values (3,'qhdl0224');
+insert into playlist_repost_tb (playlist_id,member_id) values (4,'qhdl0224');
+insert into playlist_repost_tb (playlist_id,member_id) values (5,'qhdl0224');
+insert into playlist_repost_tb (playlist_id,member_id) values (6,'leejingoo');
+insert into playlist_repost_tb (playlist_id,member_id) values (7,'leejingoo');
+insert into playlist_repost_tb (playlist_id,member_id) values (8,'jeondong');
+insert into playlist_repost_tb (playlist_id,member_id) values (9,'jeondong');
+insert into playlist_repost_tb (playlist_id,member_id) values (10,'jeondong');
+insert into playlist_repost_tb (playlist_id,member_id) values (3,'joonsung14');
+insert into playlist_repost_tb (playlist_id,member_id) values (4,'joonsung14');
+insert into playlist_repost_tb (playlist_id,member_id) values (5,'joonsung14');
+insert into playlist_repost_tb (playlist_id,member_id) values (6,'joonsung14');
+insert into playlist_repost_tb (playlist_id,member_id) values (7,'joonsung14');
+insert into playlist_repost_tb (playlist_id,member_id) values (8,'jiwookkkk');
+
+/* like_playlist_tb */
+insert into like_playlist_tb (playlist_id,member_id) values (1,'jiwookkkk');
+insert into like_playlist_tb (playlist_id,member_id) values (1,'soheesleep');
+insert into like_playlist_tb (playlist_id,member_id) values (1,'oaksungmin');
+insert into like_playlist_tb (playlist_id,member_id) values (2,'jiwookkkk');
+insert into like_playlist_tb (playlist_id,member_id) values (3,'jiwookkkk');
+insert into like_playlist_tb (playlist_id,member_id) values (5,'soheesleep');
+insert into like_playlist_tb (playlist_id,member_id) values (1,'qhdl0224');
+insert into like_playlist_tb (playlist_id,member_id) values (2,'soheesleep');
+insert into like_playlist_tb (playlist_id,member_id) values (8,'donghoon');
+insert into like_playlist_tb (playlist_id,member_id) values (12,'donghoon');
+insert into like_playlist_tb (playlist_id,member_id) values (12,'oaksungmin');
+insert into like_playlist_tb (playlist_id,member_id) values (11,'donghoon');
+insert into like_playlist_tb (playlist_id,member_id) values (10,'donghoon');
+insert into like_playlist_tb (playlist_id,member_id) values (14,'oaksungmin');
+insert into like_playlist_tb (playlist_id,member_id) values (15,'soheesleep');

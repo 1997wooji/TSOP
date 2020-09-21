@@ -1,0 +1,57 @@
+
+
+
+.btn-play-music, .btn-play-playlist {
+	
+}
+
+.btn-form {
+	color: #000000;
+	opacity: 0.6;
+	transition: 0.2s;
+}
+
+.btn-form:hover, .btn-form:active {
+	color: #3F51B5;
+	opacity: 1;
+	transition: 0.2s;
+}
+
+.btn-tsop {
+	background-color: rgba(0,0,0,0);
+	border:none;
+	color:#cccccc;
+	opacity: 0.6;
+	transition: 0.2s;
+}
+
+.btn-tsop:focus {
+	outline-style: none;
+}
+
+.btn-tsop:hover, .btn-tsop:active {
+	
+	opacity: 1;
+	cursor: pointer;
+	color:#3F51B5;
+	transition: 0.2s;
+}
+
+
+.btn-like:hover {
+	color: #F44336!important;
+}
+
+.like-active, .like-active:hover {
+	opacity:1;
+	color: #F44336!important;
+}
+
+.btn-like-music {
+}
+
+.btn-follow {
+	background-color: rgba(0,0,0,0);
+	padding: 0;
+	margin: 0;
+}

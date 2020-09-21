@@ -1,0 +1,116 @@
+.player {
+	background-color: #fcfcfc;
+	color: #455A64;
+	font-size: 30px;
+	line-height: 30px;
+	height: 60px;
+	padding: 5px 30px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #cccccc;
+}
+
+.player .btn {
+	font-size: 20px;
+	line-height:20px;
+	padding:0;
+	margin: 15px 10px;
+	color: #212121;
+	opacity: 0.8;
+	transition: 0.2s;
+}
+
+.player .btn:hover, .player .btn:active {
+	color: #536DFE;
+	opacity: 1;
+	transition: 0.2s;
+}
+
+.player img {
+	width:50px;
+	height:50px;
+    object-fit: contain;
+}
+
+.player .player-info {
+	width:200px;
+}
+
+.player .player-text {
+	font-size: 20px;
+	line-height: 20px;
+	margin: 2.5px 0;
+}
+
+.player .progress {
+	height: 4px;
+	margin: 23px 0px;
+	background-color: #cccccc;
+	opacity: 0.8;
+	transition: 0.2s;	
+}
+
+.player .progress:hover {
+	opacity:1;
+	transition: 0.2s;
+}
+
+.player .progress-bar {
+
+	background-color: #536DFE;
+}
+
+.player .play-time {
+	width:40px;
+	font-size:14px;
+	line-height:14px;
+	height:14px;
+	margin: 18px 5px;
+}
+
+.player .play-time-start {
+	text-align: right;
+	color: #536DFE;
+}
+
+.player .play-time-end {
+	text-align: left;
+}
+
+.slidecontainer {
+	height: 4px;
+	width: 80px;
+	margin: 23px 0px;
+	margin-right: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #cccccc;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    background: #536DFE;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 8px;
+    height: 8px;
+    background: #536DFE;
+    cursor: pointer;
+}

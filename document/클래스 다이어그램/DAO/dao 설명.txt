@@ -1,0 +1,13 @@
+
+**View DAO 모두 Singleton으로 만들기!**
+
+
+ViewDAO, DAO의 add, update, delete method는 식별키를 반환한다. (String 또는 id) delete 에서 여러개 삭제할 경우에는 식별키 배열을 반환한다.
+ViewDAO, DAO의 search method는 Object를 반환한다.
+Collection method는 (load~save까지) private으로 바꿀 것
+Collection method는 (load~save까지) VO를 반환한다!
+colloection method의 delete method에서 여러 개를 삭제할 경우에는 식별키 배열을 반환한다.
+
+collection method는 다 private로 막을 것
+(load save는 열어둬!!!)
+리팩토링때 Garbage Collector 만들기

@@ -1,0 +1,168 @@
+CREATE TABLE member_tb(
+member_id VARCHAR2(255) PRIMARY KEY,
+member_password VARCHAR2(255) NOT NULL,
+member_nickname VARCHAR2(255) NOT NULL,
+member_name VARCHAR2(255) NOT NULL,
+member_phone VARCHAR2(255) NOT NULL,
+member_email VARCHAR2(255) NOT NULL,
+member_class_id NUMBER NOT NULL
+);
+
+CREATE TABLE playlist_tb(
+playlist_id NUMBER PRIMARY KEY,
+playlist_title VARCHAR2(255) NOT NULL,
+playlist_intro CLOB NOT NULL,
+playlist_date DATE DEFAULT(SYSDATE) NOT NULL,
+member_id VARCHAR2(255) NOT NULL,
+image_id  NUMBER NOT NULL
+);
+
+CREATE TABLE follow_tb(
+follow_member_id VARCHAR2(255),
+follower_member_id VARCHAR2(255),
+PRIMARY KEY(follow_member_id, follower_member_id)
+);
+
+CREATE TABLE member_class_tb(
+member_class_id NUMBER PRIMARY KEY,
+member_class_name VARCHAR2(255) NOT NULL,
+maximum_storage_size NUMBER NOT NULL
+);
+
+CREATE TABLE playlist_repost_tb(
+playlist_id NUMBER,
+member_id VARCHAR2(255),
+PRIMARY KEY(playlist_id, member_id)
+);
+
+CREATE TABLE like_playlist_tb(
+playlist_id NUMBER,
+member_id VARCHAR2(255),
+PRIMARY KEY(playlist_id, member_id)
+);
+
+CREATE TABLE like_music_tb(
+music_id NUMBER,
+member_id VARCHAR2(255),
+PRIMARY KEY(music_id, member_id)
+);
+
+CREATE TABLE music_tb(
+music_id NUMBER PRIMARY KEY,
+music_title VARCHAR2(255) NOT NULL,
+music_intro CLOB NOT NULL,
+music_date DATE DEFAULT(SYSDATE) NOT NULL,
+member_id VARCHAR2(255) NOT NULL,
+file_id NUMBER NOT NULL,
+genre_id NUMBER NOT NULL,
+image_id NUMBER NOT NULL
+);
+
+CREATE TABLE genre_tb(
+genre_id NUMBER PRIMARY KEY,
+genre_name VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE tag_playlist_tb(
+tag_name VARCHAR2(255),
+playlist_id NUMBER,
+PRIMARY KEY(tag_name, playlist_id)
+);
+
+CREATE TABLE tag_music_tb(
+tag_name VARCHAR2(255),
+music_id NUMBER,
+PRIMARY KEY(tag_name, music_id)
+);
+
+CREATE TABLE file_tb(
+file_id NUMBER PRIMARY KEY,
+file_name VARCHAR2(255) NOT NULL,
+file_extension VARCHAR2(255) NOT NULL,
+file_upload_date DATE DEFAULT(SYSDATE) NOT NULL,
+file_size NUMBER NOT NULL,
+member_id VARCHAR2(255) NOT NULL,
+local_file_id NUMBER NOT NULL,
+folder_id NUMBER NOT NULL
+);
+
+CREATE TABLE important_file_tb(
+file_id NUMBER PRIMARY KEY,
+file_important CHAR(1) DEFAULT(0) NOT NULL
+);
+
+CREATE TABLE media_file_tb(
+file_id NUMBER PRIMARY KEY,
+file_play_time NUMBER NOT NULL
+);
+
+CREATE TABLE music_config_tb(
+music_id NUMBER PRIMARY KEY,
+music_visibility CHAR(1) DEFAULT(0) NOT NULL,
+music_download_accept CHAR(1) DEFAULT(0) NOT NULL
+);
+
+CREATE TABLE music_count_tb(
+music_id NUMBER PRIMARY KEY,
+music_play_count NUMBER NOT NULL
+);
+
+CREATE TABLE playlist_config_tb(
+playlist_id NUMBER PRIMARY KEY,
+playlist_visibility CHAR(1) NOT NULL
+);
+
+CREATE TABLE image_tb(
+image_id NUMBER PRIMARY KEY,
+image_path VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE member_profile_tb(
+member_id VARCHAR2(255) PRIMARY KEY,
+member_intro CLOB DEFAULT('') NOT NULL,
+image_id NUMBER NOT NULL
+);
+
+CREATE TABLE playlist_path_tb(
+playlist_id NUMBER PRIMARY KEY,
+playlist_path VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE local_file_tb(
+local_file_id NUMBER PRIMARY KEY,
+local_file_path VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE folder_tb(
+folder_id NUMBER PRIMARY KEY,
+folder_name VARCHAR2(255) NOT NULL,
+super_folder_id NUMBER NOT NULL,
+member_id VARCHAR2(255) NOT NULL
+);
+
+ALTER TABLE member_tb ADD FOREIGN KEY(member_class_id) REFERENCES member_class_tb(member_class_id) ON DELETE CASCADE;
+ALTER TABLE follow_tb ADD FOREIGN KEY(follow_member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE follow_tb ADD FOREIGN KEY(follower_member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE like_playlist_tb ADD FOREIGN KEY(playlist_id) REFERENCES playlist_tb(playlist_id) ON DELETE CASCADE;
+ALTER TABLE like_playlist_tb ADD FOREIGN KEY(member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE playlist_repost_tb ADD FOREIGN KEY(playlist_id) REFERENCES playlist_tb(playlist_id) ON DELETE CASCADE;
+ALTER TABLE playlist_repost_tb ADD FOREIGN KEY(member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE like_music_tb ADD FOREIGN KEY(music_id) REFERENCES music_tb(music_id) ON DELETE CASCADE;
+ALTER TABLE like_music_tb ADD FOREIGN KEY(member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE playlist_tb ADD FOREIGN KEY(member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE playlist_tb ADD FOREIGN KEY(image_id) REFERENCES image_tb(image_id) ON DELETE CASCADE;
+ALTER TABLE tag_playlist_tb ADD FOREIGN KEY(playlist_id) REFERENCES playlist_tb(playlist_id) ON DELETE CASCADE;
+ALTER TABLE music_tb ADD FOREIGN KEY(member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE music_tb ADD FOREIGN KEY(file_id) REFERENCES file_tb(file_id) ON DELETE CASCADE;
+ALTER TABLE music_tb ADD FOREIGN KEY(genre_id) REFERENCES genre_tb(genre_id) ON DELETE CASCADE;
+ALTER TABLE music_tb ADD FOREIGN KEY(image_id) REFERENCES image_tb(image_id) ON DELETE CASCADE;
+ALTER TABLE tag_music_tb ADD FOREIGN KEY(music_id) REFERENCES music_tb(music_id) ON DELETE CASCADE;
+ALTER TABLE important_file_tb ADD FOREIGN KEY(file_id) REFERENCES file_tb(file_id) ON DELETE CASCADE;
+ALTER TABLE file_tb ADD FOREIGN KEY(member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE playlist_path_tb ADD FOREIGN KEY(playlist_id) REFERENCES playlist_tb(playlist_id) ON DELETE CASCADE;
+ALTER TABLE playlist_config_tb ADD FOREIGN KEY(playlist_id) REFERENCES playlist_tb(playlist_id) ON DELETE CASCADE;
+ALTER TABLE member_profile_tb ADD FOREIGN KEY(member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE member_profile_tb ADD FOREIGN KEY(image_id) REFERENCES image_tb(image_id) ON DELETE CASCADE;
+ALTER TABLE file_tb ADD FOREIGN KEY(local_file_id) REFERENCES local_file_tb(local_file_id) ON DELETE CASCADE;
+ALTER TABLE folder_tb ADD FOREIGN KEY(member_id) REFERENCES member_tb(member_id) ON DELETE CASCADE;
+ALTER TABLE file_tb ADD FOREIGN KEY(folder_id) REFERENCES folder_tb(folder_id) ON DELETE CASCADE;

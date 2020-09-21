@@ -1,0 +1,138 @@
+/* The sidebar menu */
+.sidemenu {
+	margin-top: 50px;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    background-color: #fcfcfc;
+    color: #455A64;
+}
+
+.sidemenu-info {
+	text-size: 16px;
+	line-height: 16px;
+	color:#607D8B;
+}
+
+.sidemenu .divider {
+	border: solid 2px #BDBDBD;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px;
+}
+
+.sidemenu .nav-header {
+	text-align: center;
+	font-size:30px;
+	line-height:30px;
+	padding: 10px;
+}
+
+.sidemenu-navbar {
+	padding:0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.sidemenu i {
+	margin-right: 20px;
+}
+
+.sidemenu .nav-item {
+	text-align: left;
+	font-size: 20px;
+	line-height: 20px;
+	padding:5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.sidemenu .nav-link {
+	padding: 0;
+	color: #455A64;
+}
+
+.sidemenu .nav-link:hover, .sidemenu .nav-link:active {
+	color: #CDDC39;
+}
+
+.navbar-cloud {
+	position: fixed;
+	top:60px;
+	left:250px;
+	z-index:999;
+	width: calc(100% - 250px);
+	height: 50px;
+	min-width: 800px;
+	background-color: #fff;
+}
+
+.navbar-cloud .btn {
+	font-size:38px;
+	line-height:38px;
+	background-color: rgba(0,0,0,0);
+	color:#2d2d30;
+}
+
+.navbar-cloud .btn[disabled], .navbar-cloud .btn[disabled]:active, .navbar-cloud .btn[disabled]:hover, .navbar-cloud .btn[disabled]:focus{
+	color:#CFD8DC!important;
+}
+
+.navbar-cloud .btn:hover {
+	color: #CDDC39;
+}
+
+.btn, .btn:hover, .btn:focus, .btn:active {
+	box-shadow:none;
+	outline-style:none;
+	border: 0;
+}
+
+.file .btn {
+	background-color: rgba(0,0,0,0);
+	color:#455A64;
+}
+
+.file .btn-important{
+	color:#FFEB3B;
+}
+
+/* Style page content */
+.main {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding-top: 50px;
+    padding: 0px 10px;
+    height: 100%;
+}
+
+.cloud-browser {
+	margin-top: 50px;
+	padding-top: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.selected, .selected:hover, .selected:active {
+	background-color: #536DFE!important;
+	color: #fff!important;
+}
+
+.hide {
+	display: none;
+	transition: all 0.5s;
+}
+
+.show {
+	display: block;
+	transition: all 0.5s;
+}

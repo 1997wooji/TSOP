@@ -1,0 +1,41 @@
+/* navbar or nab */
+
+.topbar {
+	height: 60px;
+	background-color: #2d2d30;
+}
+
+.navbar-tsop .nav-link {
+	color: #C5CAE9;
+	opacity: 0.6;
+	transition: 0.2s;
+}
+
+.navbar-tsop .nav-link, .navbar-tsop .nav-link:hover, .navbar-tsop .nav-link:active, .navbar-tsop .nav-link:focus {
+	outline-style: none;
+	border: 0;
+	box-shadow: none;
+}
+
+.navbar-tsop .nav-link:hover, .navbar-tsop .nav-link:active, navbar-tsop:focus {
+	color: #ffffff;
+	opacity: 1;
+	transition: 0.2s;
+}
+
+.navbar-tsop .nav-link[diabled], .navbar-tsop .nav-link[disabled]:hover, navbar-tsop .nav-link[disabled]:active, .navbar-tsop .nav-link[disabled]:focus {
+	color: #cccccc;
+}
+
+.text-link, .text-link:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.text-link:hover, .text-link:active{
+	color:#3F51B5;
+}
+
+.text-link:hover {
+	text-decoration: underline;
+}
